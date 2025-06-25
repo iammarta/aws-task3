@@ -4,21 +4,21 @@ AWS CodePipeline and AWS S3 bucket can be used together to automate the deployme
 
 To deploy a static website using CodePipeline and S3, you will need the following:
 
-- A CodeCommit repository to store your website files.
+- A GitHub repository to store your website files.
 - An S3 bucket to host your website.
 - A CodePipeline pipeline to automate the deployment process.
 
 The CodePipeline pipeline will typically have the following stages:
 
-1. **Source Stage**: Fetches the latest version of your website files from CodeCommit.
+1. **Source Stage**: Fetches the latest version of your website files from GitHub.
 2. **Build Stage**: Compiles and packages your website files.
 3. **Deploy Stage**: Copies your website files to the S3 bucket.
 
-Once the CodePipeline pipeline is created, it will automatically deploy your website whenever you make changes to your website files in CodeCommit.
+Once the CodePipeline pipeline is created, it will automatically deploy your website whenever you make changes to your website files in GitHub.
 
 ## Steps to Deploy a Static Website using AWS CodePipeline and S3:
 
-1. Create a CodeCommit repository to store your website files.
+1. Create a GitHub repository to store your website files.
 2. Create an S3 bucket to host your website.
 3. Configure the S3 bucket for website hosting.
 4. Create a CodePipeline pipeline.
@@ -28,7 +28,7 @@ Once the CodePipeline pipeline is created, it will automatically deploy your web
 
 ## Task completion
 
-Step-by-step process of task completion has detailed description in prepared material on moodle LMS (AWS_CodePipeline_CodeCommit).
+Use prepared material on moodle LMS [AWS_CodePipeline](https://softserve.academy/mod/resource/view.php?id=18219).
 
 In source file `index.html` should be added string like `Author: YourName YourSurname YourGroup`
 
